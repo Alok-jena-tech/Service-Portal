@@ -1,0 +1,16 @@
+const express=require("express")
+const router=express.Router()
+const authoMiddleware=require( "../middlewares/autho-middleware")
+const {getAllUsers, getUserById, updateUserById}=require("../controllers/admin-controller")
+const {getAllContacts}=require("../controllers/admin-controller")
+const adminMiddleware = require("../middlewares/admin-middleware")
+const {deleteUserById}=require("../controllers/admin-controller")
+const {deleteContactById}=require("../controllers/admin-controller")
+router.route("/users").get(authoMiddleware,adminMiddleware, getAllUsers)
+router.route("/users/:id").get(authoMiddleware,adminMiddleware,getUserById)
+router.route("/users/delete/:id").delete(authoMiddleware,adminMiddleware,deleteUserById)
+router.route("/users/update/:id").patch(authoMiddleware,adminMiddleware,updateUserById)
+router.route("/contacts").get(getAllContacts)
+router.route("/contacts/delete/:id").delete(authoMiddleware,adminMiddleware,deleteContactById)
+
+module.exports=router;

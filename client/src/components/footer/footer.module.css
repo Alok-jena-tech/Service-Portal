@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+    background-color: blue;
+    color: antiquewhite;
+}
+.container .navSide{
+display: flex;
+list-style-type: none;
+/* justify-content: space-around; */
+gap:5%;
+
+
+}
+.container a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 1.5vw;
+font-weight: 500;
+}
+
+@media(max-width:912px){
+    .container .admin{
+     font-size: 2vw;
+    }
+     .container .navSide .link{
+         /* justify-content: space-around; */
+         font-size: 2vw;
+         /* gap:5%; */
+         
+         
+         }
+ }
+@media(max-width:640px){
+   .container .admin{
+    font-size: 2vw;
+   }
+    .container .navSide .link{
+        /* justify-content: space-around; */
+        font-size: 2vw;
+        /* gap:5%; */
+        
+        
+        }
+}

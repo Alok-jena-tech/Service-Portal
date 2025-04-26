@@ -1,0 +1,53 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.body .container {
+  background-color: #f8f6f6;
+  color: black;
+  height: 60%;
+  border-radius: 5px;
+  padding: 3% 5%;
+  & h1 {
+    font-size: 2vw;
+    margin-bottom: 5px;
+    padding-left: 2vw;
+  }
+}
+.body .container form .label {
+  font-size: 1.2vw;
+  padding-right: 2vw;
+}
+.body .container form .sec {
+  padding-bottom: 2vh;
+}
+.body .container form .in {
+  margin-left: 2.2vw;
+  border-radius: 2px;
+  padding: 2px;
+}
+.body .container form .in2 {
+  margin-left: 4.2vw;
+  border-radius: 2px;
+  padding: 2px;
+}
+.body .container form .in3 {
+    border-radius: 2px;
+    padding: 2px;
+  }
+
+.body .container form .btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 1vh;
+}
+.body .container form .btn button{
+padding: 5px 10px;
+font-size: 1vw;
+border-radius: 5px;
+border: none;
+background-color: green;
+color: aliceblue;
+}

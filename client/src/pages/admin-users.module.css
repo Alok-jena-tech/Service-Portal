@@ -1,0 +1,46 @@
+.container h1{
+    padding-left: 40%;
+    font-size: 3vw;
+}
+.container .tbox{
+    background-color: aliceblue;
+    color: black;
+    padding: 2%;
+    border-radius: 2%;
+    margin-top: 3%;
+}
+.container .tbox table thead tr th{
+    width: 20%;
+    border-bottom: 5px solid black;
+    padding-bottom: 3vh;
+    font-size: 2vw;
+    color:black;
+
+}
+
+.container .tbox table tbody tr td{
+    padding-left: 4vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1vh;
+    border: 1px solid black;
+}
+.container .tbox table tbody tr .btnEdit{
+    border-radius: 5px;
+    border: none;
+    font-size: 1vw;
+    padding: 3% 12%;
+    color: rgb(26, 86, 12);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    background-color: hsl(90, 66%, 71%);
+    cursor: pointer;
+    text-decoration: none;
+}
+.container .tbox table tbody tr .btnDelet{
+    border-radius: 5px;
+    padding: 3% 12%;
+    border: none;
+    font-size: 1vw;
+background-color: red;
+color: aliceblue;
+cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+}

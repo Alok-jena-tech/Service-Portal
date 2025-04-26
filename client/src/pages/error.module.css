@@ -1,0 +1,23 @@
+*{padding: 0;
+margin: 0;}
+.container{
+    background-image: linear-gradient(rgb(232, 173, 173),white,rgb(104, 80, 80));
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h1{
+        font-size: 10vw;
+    }
+    & .btnn{
+        padding-top: 2vh;
+        display: flex;
+        gap: 2vw;
+        & button{
+            background-color: blue;
+            color: aliceblue;
+            padding:4px;
+            border-radius: 5px;
+        }
+    }
+}

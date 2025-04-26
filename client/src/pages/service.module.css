@@ -1,0 +1,144 @@
+.container {
+  width: 100vw;
+  padding: 2% 10%;
+  background-image: linear-gradient(
+    rgb(5, 39, 53),
+    rgb(76, 52, 9),
+    rgb(10, 53, 70)
+  );
+  & h1 {
+    color: white;
+    font-size: 4vw;
+    padding-bottom: 2vh;
+  }
+  & .cardContain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  & .card {
+    text-align: center;
+    border: 1px solid white;
+    width: 22%;
+    height: 55vh;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: rgba(212, 212, 219, 0.2) 0px 7px 29px 0px;
+    & img {
+      width: 10vw;
+      height: 10%;
+      border-radius: 5px;
+    }
+    & .price {
+      display: flex;
+      color: white;
+      justify-content: space-between;
+      padding-top: 4vh;
+      font-size: 1.5vw;
+      & .pr{
+        color: red;
+      }
+    }
+    & h3 {
+      color: rgb(10, 245, 37);
+      font-size: 1.8vw;
+      padding-top: 4vh;
+    }
+    & .desc {
+      color: white;
+      font-size: 1.1vw;
+      padding-top: 4vh;
+      /* padding-bottom: vh; */
+    }
+  }
+}
+
+
+@media(max-width:1280px){
+  .container .cardContain .card{
+    height: 50vh;
+    margin-bottom: 2vh;
+    & .desc {
+      color: white;
+      font-size: 2vw;
+      padding-top: 2vh;
+      /* padding-bottom: vh; */
+    }
+  }
+}
+
+@media(max-width:1024px){
+  .container .cardContain .card{
+    & .desc {
+      color: white;
+      font-size: 2vw;
+      padding-top: 2vh;
+      /* padding-bottom: vh; */
+    }
+  }
+}
+
+@media(max-width:912px){
+  .container .cardContain .card{
+    width:25vw;
+    height:32vh;
+    padding: 2%;
+    margin-bottom: 1vh;
+    & img {
+      width: 20vw;
+    }
+    & .price {
+      display: flex;
+      color: white;
+      justify-content: space-between;
+      padding-top: 2vh;
+      font-size: 2.5vw;
+      & .pr{
+        color: red;
+      }
+    }
+    & h3 {
+      color: rgb(10, 245, 37);
+      font-size: 3vw;
+      padding-top: 2vh;
+    }
+    & .desc {
+      color: white;
+      font-size: 2vw;
+      padding-top: 2vh;
+      /* padding-bottom: vh; */
+    }}
+}
+@media(max-width:640px){
+  .container .cardContain .card{
+width:30vw;
+height:28vh;
+padding: 2%;
+& img {
+  width: 20vw;
+}
+& .price {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding-top: 2vh;
+  font-size: 2.5vw;
+  & .pr{
+    color: red;
+  }
+}
+& h3 {
+  color: rgb(10, 245, 37);
+  font-size: 3vw;
+  padding-top: 2vh;
+}
+& .desc {
+  color: white;
+  font-size: 2vw;
+  padding-top: 2vh;
+  /* padding-bottom: vh; */
+}
+
+  }
+}
