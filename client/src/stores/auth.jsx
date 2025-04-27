@@ -3,6 +3,7 @@ export const AuthoContext = createContext();
 export const AuthoProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem("token"));
   const [user, setUser] = useState();
+  console.log("user data",user)
   const [services,setServices]=useState();
   const [userLoading,setUserLoading]=useState(true);
   // let okk=!! user;
